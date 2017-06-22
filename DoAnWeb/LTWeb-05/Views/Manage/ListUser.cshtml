@@ -1,0 +1,66 @@
+﻿@using LTWeb_05.Models
+@model List<User>
+@{
+    ViewBag.Title = "ListUser";
+}
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row bg-title">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <h4 class="page-title">Manage User</h4>
+            </div>
+            <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                <ol class="breadcrumb">
+                    <li><a href="#">Dashboard</a></li>
+                    <li class="active">Basic Table</li>
+                </ol>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /row -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="white-box">
+                    <h3 class="box-title">Basic Table</h3>
+                    <p class="text-muted">Add class <code>.table</code></p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Permission</th>
+                                    <th>UserName</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Option</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var l in Model)
+                                {
+                                   <tr>
+                                       <td>@l.f_Permission</td>
+                                        <td>@l.f_Username</td>
+                                        <td>@l.f_Name</td>
+                                        <td>@l.f_Email</td>
+                                        <td>
+                                            <a href="@Url.Action("DeleteUser","Manage", new {id = l.f_ID})" class="btn btn-danger" role="button">
+                                                Delete
+                                            </a>
+                                           
+                                        </td>
+                                       <td>
+                                           <a href="#" class="btn btn-success" role="button">
+                                               ResetPass
+                                           </a>
+                                       </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+

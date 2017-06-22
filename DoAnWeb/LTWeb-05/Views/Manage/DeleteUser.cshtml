@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "DeleteUser";
+}
+
+<div>
+    Bạn có muốn xóa User có mã là << @ViewBag.f_ID >> ???
+</div>
+<br />
+<a href="@Url.Action("ListUser","Manage")">Quay về</a>
+<form method="post" action="">
+    <input type="hidden" value="@ViewBag.f_ID" name="idToDelete" />
+    <button type="submit" class="btn btn-danger">Đồng ý xóa</button>
+</form>
+

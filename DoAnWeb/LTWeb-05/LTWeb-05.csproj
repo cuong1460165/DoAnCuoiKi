@@ -638,6 +638,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Filter\CheckLoginAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -694,6 +695,8 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Product\Product.cshtml" />
     <Content Include="Views\Account\Profile.cshtml" />
+    <Content Include="Views\Manage\ListUser.cshtml" />
+    <Content Include="Views\Manage\DeleteUser.cshtml" />
     <Content Include="Views\Product\Bid.cshtml" />
     <Content Include="Views\Product\EditMaxPrice.cshtml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />
