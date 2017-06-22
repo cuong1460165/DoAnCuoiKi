@@ -34,6 +34,40 @@ namespace LTWeb_05.Controllers
                 return View(list);
             }
         }
+        //
+        // GET: /Product/ByCat
+        public ActionResult ByCat(int? id, int page = 1)
+        {
+            if (id.HasValue == false)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            using (var ctx = new QLBHEntities())
+            {
+                int n = ctx.Products
+                    .Where(p => p.CatID == id)
+                    .Count();
+                int recordsPerPage = 6;
+                int nPages = n / recordsPerPage;
+                int m = n % recordsPerPage;
+                if (m > 0)
+                {
+                    nPages++;
+                }
+                ViewBag.Pages = nPages;
+                ViewBag.CurPage = page;
+                var list = ctx.Products
+                    .Where(p => p.CatID == id)
+                    .OrderBy(p => p.ProID)
+                    .Skip((page - 1) * recordsPerPage)
+                    .Take(recordsPerPage)
+                    .ToList();
+
+                //var list = ctx.Products
+                //    .Where(p => id == p.CatID)
+                //    .ToList();
+                return View(list);
+            }
+        }
     }
 }
-      
