@@ -682,6 +682,7 @@
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Views\Product\ByCat.cshtml" />
+    <Content Include="Views\Product\Detail.cshtml" />
     <Content Include="Views\Product\Product.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

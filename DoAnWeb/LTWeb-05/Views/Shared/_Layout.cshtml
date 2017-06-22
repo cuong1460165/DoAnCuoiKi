@@ -80,10 +80,11 @@
                         <div class="shop-menu pull-right">
                             <ul class="nav navbar-nav">
                                 <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-                                <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+                                <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li> 
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">                                        </a>
-                                        <ul class="dropdown-menu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        </a>
+                                        <ul class="dropdown-menu">                                          
                                             <li><a id="logoutLink" href="javascript:;">Logout</a></li> 
                                             
                                         </ul>
@@ -94,6 +95,7 @@
                 </div>
             </div>
         </div><!--/header-middle-->
+        <form id="frmLogout" method="post" action="@Url.Action("Logout","Account")"></form>
         <div class="header-bottom">
             <!--header-bottom-->
             <div class="container">
@@ -113,11 +115,9 @@
                                 <li class="dropdown">
                                     <a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="#">Products</a></li>
+                                        <li><a href="@Url.Action("Product","Product")">Products</a></li>
                                         <li><a href="product-details.html">Product Details</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="#">LikeList</a></li>
-                                        <li><a href="#">Login</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>                                    
                                     </ul>
                                 </li>
                                 <li class="dropdown">
