@@ -697,6 +697,10 @@
     <Content Include="Views\Account\Profile.cshtml" />
     <Content Include="Views\Manage\ListUser.cshtml" />
     <Content Include="Views\Manage\DeleteUser.cshtml" />
+    <Content Include="Views\Manage\ListCat.cshtml" />
+    <Content Include="Views\Manage\AddCat.cshtml" />
+    <Content Include="Views\Manage\DeleteCat.cshtml" />
+    <Content Include="Views\Manage\EditCat.cshtml" />
     <Content Include="Views\Product\Bid.cshtml" />
     <Content Include="Views\Product\EditMaxPrice.cshtml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />

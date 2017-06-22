@@ -20,7 +20,30 @@ namespace LTWeb_05.Controllers
                 return View(list);
             }
         }
-        
+        public ActionResult ListCat()
+        {
+            using (var ctx = new QLBHEntities())
+            {
+                var list = ctx.Categories.ToList();
+                return View(list);
+            }
+        }
+        public ActionResult AddCat()
+        {
+            return View();
+        }
+        //
+        // POST: /Product/Add
+        [HttpPost]
+        public ActionResult AddCat(Category model)
+        {
+            using (var ctx = new QLBHEntities())
+            {
+                ctx.Categories.Add(model);
+                ctx.SaveChanges();
+            }
+            return View();
+        }
         public ActionResult DeleteUser(int? id)
         {
             if (id.HasValue == false)
@@ -44,7 +67,57 @@ namespace LTWeb_05.Controllers
             }
             return RedirectToAction("ListUser", "Manage");
         }
-       
+        public ActionResult DeleteCat(int? id)
+        {
+            if (id.HasValue == false)
+            {
+                return RedirectToAction("ListCat", "Manage");
+            }
+            ViewBag.CatID = id;
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult DeleteCat(int idToDelete)
+        {
+            using (var ctx = new QLBHEntities())
+            {
+                Category model = ctx.Categories
+                    .Where(p => p.CatID == idToDelete)
+                    .FirstOrDefault();
+                ctx.Categories.Remove(model);
+                ctx.SaveChanges();
+            }
+            return RedirectToAction("ListCat", "Manage");
+        }
+         public ActionResult EditCat(int? id)
+        {
+            if (id.HasValue == false)
+            {
+                return RedirectToAction("ListCat", "Manage");
+            }
+            using (var ctx = new QLBHEntities())
+            {
+                Category model = ctx.Categories
+                    .Where(p => p.CatID == id)
+                    .FirstOrDefault();
+                return View(model);
+            }
+        }
+        //
+        // GET: /Product/Update
+        [HttpPost]
+        public ActionResult Update(Category model)
+        {
+            using (var ctx = new QLBHEntities())
+            {
+                ctx.Entry(model).State = 
+                    System.Data.Entity.EntityState.Modified;
+                ctx.SaveChanges();
+            }
+            return RedirectToAction("ListCat", "Manage");
+        }
+
         [HttpPost]
         public ActionResult ResetPass(User us)
         {

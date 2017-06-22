@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "DeleteCat";
+}
+
+<div>
+    Bạn có muốn xóa Category có mã là << @ViewBag.CatID >> ???
+</div>
+<br />
+<a href="@Url.Action("ListUser","Manage")">Quay về</a>
+<form method="post" action="">
+    <input type="hidden" value="@ViewBag.CatID" name="idToDelete" />
+    <button type="submit" class="btn btn-danger">Đồng ý xóa</button>
+</form>
+
