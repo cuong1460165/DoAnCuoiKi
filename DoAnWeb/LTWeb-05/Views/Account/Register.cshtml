@@ -1,0 +1,151 @@
+﻿@*@section view_title{
+        Đăng ký thành viên
+    }*@
+@using BotDetect.Web.Mvc;
+@section css{
+    <link href="~/assets/bootstrap-datepicker/bootstrap-datepicker3.min.css" rel="stylesheet" />
+    <style type="text/css">
+        label{
+            font-weight: normal !important;
+        }
+    </style>
+    <link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl" rel="stylesheet" type="text/css" />
+}
+@section js{
+    <script src="~/assets/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="~/assets/jquery-3.2.0.min.js"></script>
+    <script src="~/assets/jquery-validation/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+        
+        $("#frmRegister").validate({
+            rules: {
+                Username: {
+                    required: true
+                   
+                },
+                RawPWD: {
+                    required: true,
+                    minlength: 6
+                },
+                CPWD:{
+                    equalTo: '#txtPWD'
+                },
+                Name: {
+                    required: true
+                },
+                Email: {
+                    required: true,
+                    email: true
+                },
+                DOB: {
+                    required: true
+                },
+            },
+            messages: {
+                Username: {
+                    required: 'Vui lòng nhập UserName.'
+                },
+                RawPWD: {
+                    required: 'Vui lòng nhập Password.',
+                    minlength: 'Mật khẩu phải ít nhất dài 6 ký tự'
+                },
+                CPWD: {
+                    equalTo: 'Mật khẩu nhập lại chưa khớp'
+                },
+                Name: {
+                    required: 'Vui lòng nhập Name.'
+                },
+                Email: {
+                    required: 'Vui lòng nhập Email.',
+                    email: 'Email không đúng định dạng.'
+                },
+                DOB: {
+                    required: 'Vui lòng chọn DOB.'
+                },
+            },
+            errorElement: 'span',
+            errorClass: 'help-block',
+            highlight: function (element) {
+                $(element)
+                    .closest('.form-group')
+                    .addClass('has-error');
+            },
+            success: function (label) {
+                $(label)
+                    .closest('.form-group')
+                    .removeClass('has-error');
+                
+                label.remove();
+            },
+        });
+    </script>
+}
+@if (ViewBag.ErrorMsg != null){
+     <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Warning!</strong> @ViewBag.ErrorMsg
+    </div>
+}
+<form class="form-horizontal" method="post" action="" id="frmRegister">
+    <div class="form-group">
+        <label for="txtUsername" class="col-sm-2 control-label">Username:</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="txtUsername" placeholder="Tên đăng nhập" name="Username">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtPWD" class="col-sm-2 control-label">Password:</label>
+        <div class="col-sm-4">
+            <input type="password" class="form-control" id="txtPWD" placeholder="Password" name="RawPWD">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtCPWD" class="col-sm-2 control-label">RePassword:</label>
+        <div class="col-sm-4">
+            <input type="password" class="form-control" id="txtCPWD" placeholder="Nhập lại password" name="CPWD">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtName" class="col-sm-2 control-label">Name:</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="txtName" placeholder="Họ tên" name="Name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtEmail" class="col-sm-2 control-label">Email Address:</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="txtEmail" placeholder="Email" name="Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtDOB" class="col-sm-2 control-label">Day Of Birth:</label>
+        <div class="col-sm-4">
+                @*<input type="text" class="form-control datepicker" id="txtDOB" placeholder="d/m/yyyy" name="DOB">*@
+            <input type="date" class="form-control datepicker" id="txtDOB" placeholder="d/m/yyyy" name="DOB">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-4">
+            @{
+                var exampleCaptcha = new MvcCaptcha("ExampleCaptcha");
+                exampleCaptcha.Reset();
+             }
+            @Html.Captcha(exampleCaptcha)
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtCaptchaCode" class="col-sm-2 control-label">Captcha:</label>
+        <div class="col-sm-4">
+            @*<input type="text" class="form-control datepicker" id="txtDOB" placeholder="d/m/yyyy" name="DOB">*@
+            <input type="text" class="form-control" id="txtCaptchaCode" placeholder="Captcha" name="CaptchaCode">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success">
+                <i class="fa fa-check"></i>
+                Register
+            </button>
+        </div>
+    </div>
+</form>
