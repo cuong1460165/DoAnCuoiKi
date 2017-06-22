@@ -640,10 +640,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ViewInfoController.cs" />
     <Compile Include="Filter\CheckLoginAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\Cart.cs" />
     <Compile Include="Helpers\CurrentContext.cs" />
     <Compile Include="Helpers\StringUtils.cs" />
     <Compile Include="Models\BidDetail.cs">
@@ -704,6 +706,7 @@
     <Content Include="Views\Product\Bid.cshtml" />
     <Content Include="Views\Product\EditMaxPrice.cshtml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\ViewInfo\WatchList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -716,6 +719,7 @@
     <Folder Include="assets\bootstrap-touchspin-master\dist\css\" />
     <Folder Include="Imgs\sp\36\" />
     <Folder Include="Imgs\sp\43\" />
+    <Folder Include="Views\Bid\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
