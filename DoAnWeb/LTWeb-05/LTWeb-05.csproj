@@ -664,6 +664,7 @@
     <Compile Include="Models\Product.cs">
       <DependentUpon>QLBH.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ProductVM.cs" />
     <Compile Include="Models\QLBH.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -692,7 +693,8 @@
     <Content Include="Views\Product\Detail.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Product\Product.cshtml" />
-    <Content Include="Views\ViewInfo\WatchList.cshtml" />
+    <Content Include="Views\Account\Profile.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
