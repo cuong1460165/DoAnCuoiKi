@@ -87,5 +87,57 @@ namespace LTWeb_05.Controllers
                 return View(model);
             }
         }
+        [HttpPost]
+        public ActionResult Detail(BidDetail model,int id)
+        {
+            BidDetail bid = new BidDetail();
+            using (var ctx = new QLBHEntities())
+            {
+                bid.BidPrice = ctx.BidDetails.Where(p => p.ProID == model.ProID).Max(p => p.BidPrice);
+            }
+            using (var ctx = new QLBHEntities())
+            {
+                ctx.BidDetails.Add(model);
+                ctx.SaveChanges();
+            }
+            return RedirectToAction("EditMaxPrice", "Product", new { proid = model.ProID, bidprice = model.BidPrice, bidpricemaxbefore = bid.BidPrice});
+        }
+      
+        public ActionResult EditMaxPrice(double bidprice,int? proid, double bidpricemaxbefore)
+        {
+            if (proid.HasValue == false)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            Product model = new Product();
+            using (var ctx = new QLBHEntities())
+            {
+                     model = ctx.Products
+                    .Where(p => p.ProID == proid)
+                    .FirstOrDefault();
+            }
+            ViewBag.BidPriceMaxBefore = bidpricemaxbefore;
+            ViewBag.BidPrice = bidprice;
+            //BidDetail bid = new BidDetail();
+            //using (var ctx = new QLBHEntities())
+            //{
+            //    bid.BidPrice = ctx.BidDetails.Where(p => p.ProID == proid).Max(p => p.BidPrice);
+            //}
+            //ViewBag.BidPriceMax = bid.BidPrice;
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateMaxPrice(Product model)
+        {
+            BidDetail c = new BidDetail();
+            using (var ctx = new QLBHEntities())
+            {
+                ctx.Entry(model).State =
+                    System.Data.Entity.EntityState.Modified;
+                ctx.SaveChanges();
+            }
+            return RedirectToAction("Detail", "Product", new { id = model.ProID });
+        }
     }
 }

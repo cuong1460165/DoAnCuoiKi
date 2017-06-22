@@ -694,6 +694,8 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Product\Product.cshtml" />
     <Content Include="Views\Account\Profile.cshtml" />
+    <Content Include="Views\Product\Bid.cshtml" />
+    <Content Include="Views\Product\EditMaxPrice.cshtml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
