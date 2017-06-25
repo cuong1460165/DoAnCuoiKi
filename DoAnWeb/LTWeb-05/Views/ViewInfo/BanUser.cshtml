@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "BanUser";
+}
+
+<div>
+   Ban this user was UserID << @ViewBag.f_ID >> ???
+</div>
+<br />
+<a href="@Url.Action("ListUser","Manage")">Quay về</a>
+<form method="post" action="">
+    <input type="hidden" value="@ViewBag.f_ID" name="idToBan" />
+    <input type="hidden" value="@ViewBag.ProID" name="idToBan" />
+    <button type="submit" class="btn btn-danger">Đồng ý xóa</button>
+</form>
+

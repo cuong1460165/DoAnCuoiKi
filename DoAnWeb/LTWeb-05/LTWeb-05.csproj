@@ -124,6 +124,74 @@
     <Content Include="assets\bootstrap-datepicker\bootstrap-datepicker3.standalone.css.map" />
     <Content Include="assets\bootstrap-datepicker\bootstrap-datepicker3.standalone.min.css" />
     <Content Include="assets\bootstrap-datepicker\bootstrap-datepicker3.standalone.min.css.map" />
+    <Content Include="assets\bootstrap-select\css\bootstrap-select.css" />
+    <Content Include="assets\bootstrap-select\css\bootstrap-select.min.css" />
+    <Content Include="assets\bootstrap-select\js\bootstrap-select.js" />
+    <Content Include="assets\bootstrap-select\js\bootstrap-select.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-ar_AR.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-ar_AR.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-bg_BG.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-bg_BG.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-cro_CRO.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-cro_CRO.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-cs_CZ.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-cs_CZ.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-da_DK.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-da_DK.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-de_DE.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-de_DE.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-en_US.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-en_US.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-es_CL.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-es_CL.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-es_ES.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-es_ES.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-eu.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-eu.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-fa_IR.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-fa_IR.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-fi_FI.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-fi_FI.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-fr_FR.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-fr_FR.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-hu_HU.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-hu_HU.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-id_ID.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-id_ID.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-it_IT.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-it_IT.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-ko_KR.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-ko_KR.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-lt_LT.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-lt_LT.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-nb_NO.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-nb_NO.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-nl_NL.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-nl_NL.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-pl_PL.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-pl_PL.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-pt_BR.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-pt_BR.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-pt_PT.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-pt_PT.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-ro_RO.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-ro_RO.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-ru_RU.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-ru_RU.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-sk_SK.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-sk_SK.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-sl_SI.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-sl_SI.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-sv_SE.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-sv_SE.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-tr_TR.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-tr_TR.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-ua_UA.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-ua_UA.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-zh_CN.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-zh_CN.min.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-zh_TW.js" />
+    <Content Include="assets\bootstrap-select\js\i18n\defaults-zh_TW.min.js" />
     <Content Include="assets\bootstrap-touchspin-master\.gitignore" />
     <Content Include="assets\bootstrap-touchspin-master\demo\demo.css" />
     <Content Include="assets\bootstrap-touchspin-master\demo\favicon.ico" />
@@ -330,6 +398,7 @@
     <Content Include="assets\jquery-validation\localization\methods_nl.min.js" />
     <Content Include="assets\jquery-validation\localization\methods_pt.js" />
     <Content Include="assets\jquery-validation\localization\methods_pt.min.js" />
+    <Content Include="assets\js\bootstrap.file-input.js" />
     <Content Include="assets\js\bootstrap.min.js" />
     <Content Include="assets\js\contact.js" />
     <Content Include="assets\js\gmaps.js" />
@@ -529,6 +598,8 @@
     <Content Include="assets\bootstrap-touchspin-master\LICENSE.md" />
     <Content Include="assets\bootstrap-touchspin-master\package.json" />
     <Content Include="assets\bootstrap-touchspin-master\README.md" />
+    <Content Include="assets\bootstrap-select\css\bootstrap-select.css.map" />
+    <Content Include="assets\bootstrap-select\js\bootstrap-select.js.map" />
     <EntityDeploy Include="Models\QLBH.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>QLBH.Designer.cs</LastGenOutput>
@@ -622,7 +693,151 @@
     <Content Include="Scripts\locales\bootstrap-datepicker.vi.min.js" />
     <Content Include="Scripts\locales\bootstrap-datepicker.zh-CN.min.js" />
     <Content Include="Scripts\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="Scripts\tinymce\jquery.tinymce.min.js" />
+    <Content Include="Scripts\tinymce\license.txt" />
+    <Content Include="Scripts\tinymce\plugins\advlist\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\anchor\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\autolink\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\autoresize\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\autosave\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\bbcode\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\charmap\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\codesample\css\prism.css" />
+    <Content Include="Scripts\tinymce\plugins\codesample\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\code\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\colorpicker\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\css\dialog.css" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\buttons.png" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\icons.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\items.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\menu_arrow.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\menu_check.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\progress.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\img\tabs.gif" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\tiny_mce_popup.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\utils\editable_selects.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\utils\form_utils.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\utils\mctabs.js" />
+    <Content Include="Scripts\tinymce\plugins\compat3x\utils\validate.js" />
+    <Content Include="Scripts\tinymce\plugins\contextmenu\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\directionality\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\fullpage\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\fullscreen\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\help\img\logo.png" />
+    <Content Include="Scripts\tinymce\plugins\help\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\help\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\hr\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\imagetools\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\image\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\importcss\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\insertdatetime\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\legacyoutput\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\link\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\lists\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\media\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\nonbreaking\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\noneditable\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\pagebreak\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\paste\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\preview\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\print\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\save\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\searchreplace\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\spellchecker\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\tabfocus\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\table\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\template\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\textcolor\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\textpattern\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\toc\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\toc\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\visualchars\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="Scripts\tinymce\plugins\wordcount\plugin.js" />
+    <Content Include="Scripts\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="Scripts\tinymce\skins\lightgray\content.inline.min.css" />
+    <Content Include="Scripts\tinymce\skins\lightgray\content.min.css" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce-small.woff" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce.woff" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce.ttf" />
+    <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce.eot" />
+    <Content Include="Scripts\tinymce\langs\readme.md" />
     <None Include="Scripts\_references.js" />
+    <Content Include="Scripts\tinymce\skins\lightgray\img\anchor.gif" />
+    <Content Include="Scripts\tinymce\skins\lightgray\img\loader.gif" />
+    <Content Include="Scripts\tinymce\skins\lightgray\img\object.gif" />
+    <Content Include="Scripts\tinymce\skins\lightgray\img\trans.gif" />
+    <Content Include="Scripts\tinymce\skins\lightgray\skin.min.css" />
+    <Content Include="Scripts\tinymce\themes\inlite\theme.js" />
+    <Content Include="Scripts\tinymce\themes\inlite\theme.min.js" />
+    <Content Include="Scripts\tinymce\themes\modern\theme.js" />
+    <Content Include="Scripts\tinymce\themes\modern\theme.min.js" />
+    <Content Include="Scripts\tinymce\tinymce.js" />
+    <Content Include="Scripts\tinymce\tinymce.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -639,19 +854,25 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MProductController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ViewInfoController.cs" />
     <Compile Include="Filter\CheckLoginAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\Cart.cs" />
     <Compile Include="Helpers\CurrentContext.cs" />
     <Compile Include="Helpers\StringUtils.cs" />
+    <Compile Include="Models\BanUser.cs">
+      <DependentUpon>QLBH.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\BidDetail.cs">
       <DependentUpon>QLBH.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Category.cs">
+      <DependentUpon>QLBH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CmtDetail.cs">
       <DependentUpon>QLBH.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\FavoriteProduct.cs">
@@ -687,6 +908,7 @@
     <Compile Include="Models\User.cs">
       <DependentUpon>QLBH.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\UserVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -707,6 +929,18 @@
     <Content Include="Views\Product\EditMaxPrice.cshtml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />
     <Content Include="Views\ViewInfo\WatchList.cshtml" />
+    <Content Include="Views\ViewInfo\WatchComment.cshtml" />
+    <Content Include="Views\ViewInfo\JoinTheAuction.cshtml" />
+    <Content Include="Views\ViewInfo\WinAuction.cshtml" />
+    <Content Include="Views\Manage\WaitingAccept.cshtml" />
+    <Content Include="Views\Manage\EditPermisson.cshtml" />
+    <Content Include="Views\MProduct\Add.cshtml" />
+    <Content Include="Views\ViewInfo\WatchHistoryBid.cshtml" />
+    <Content Include="Views\ViewInfo\WatchDetailPrice.cshtml" />
+    <Content Include="Views\ViewInfo\BanUser.cshtml" />
+    <Content Include="Views\ViewInfo\ListProExpried.cshtml" />
+    <Content Include="Views\ViewInfo\ViewWinUser.cshtml" />
+    <Content Include="Views\Manage\ResetPass.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -719,7 +953,6 @@
     <Folder Include="assets\bootstrap-touchspin-master\dist\css\" />
     <Folder Include="Imgs\sp\36\" />
     <Folder Include="Imgs\sp\43\" />
-    <Folder Include="Views\Bid\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

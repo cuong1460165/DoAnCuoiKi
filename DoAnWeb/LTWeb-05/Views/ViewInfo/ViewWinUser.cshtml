@@ -1,0 +1,100 @@
+﻿@using LTWeb_05.Models
+@using LTWeb_05.Helpers
+@model User
+@{
+    ViewBag.Title = "ViewWinUser";
+}
+@section js{
+    <script src="~/assets/jquery-validation/jquery.validate.min.js"></script>
+    <script src="~/assets/jquery-validation/jquery.validate.js"></script>
+    <script src="~/assets/jquery-validation/additional-methods.min.js"></script>
+    <script src="~/assets/jquery-validation/additional-methods.js"></script>
+    <script src="~/assets/bootstrap-touchspin-master/dist/jquery.bootstrap-touchspin.min.js"></script>
+    <script type="text/javascript">
+        $('#txtRating').TouchSpin({
+            min: -1,
+            max: 1,
+            verticalbuttons: true
+        });
+    </script>
+}
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row bg-title">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <h4 class="page-title">Manage User</h4>
+            </div>
+            <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                <ol class="breadcrumb">
+                    <li><a href="#">Dashboard</a></li>
+                    <li class="active">Basic Table</li>
+                </ol>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /row -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="white-box">
+                    <h3 class="box-title">Basic Table</h3>
+                    <p class="text-muted">Add class <code>.table</code></p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Permission</th>
+                                    <th>UserName</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Option</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>@Model.f_Permission</td>
+                                        <td>@Model.f_Username</td>
+                                        <td>@Model.f_Name</td>
+                                        <td>@Model.f_Email</td>
+                                        <td>
+                                            <a href="@Url.Action("Index","Home")" class="btn btn-success" role="button">
+                                                Back Home
+                                            </a>
+                                        </td>                     
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div class="tab-pane fade active in" id="reviews">
+            <div class="col-sm-12">
+                <ul>
+                    <li><a href=""><i class="fa fa-user"></i>EUGEN</a></li>
+                    <li><a href=""><i class="fa fa-clock-o"></i>12:41 PM</a></li>
+                    <li><a href=""><i class="fa fa-calendar-o"></i>31 DEC 2014</a></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p><b>Write Your Review</b></p>
+                <form class="form-horizontal" id="frmAddComment" method="post" action="@Url.Action("AddComment", "ViewInfo")">
+                    <span>
+                        <input type="hidden" value="@Model.f_ID" name="f_IDRecevie">
+                        <input type="hidden" value="@CurrentContext.GetCurUser().f_ID" name="f_IDPost">
+                        <input type="text" name="f_Name" value="@CurrentContext.GetCurUser().f_Name" readonly />
+                        <input type="email" name="f_Email" value="@CurrentContext.GetCurUser().f_Email" readonly />
+
+                    </span>
+                    <textarea name="textComment" id="textComment"></textarea>
+                    <div class="col-sm-4">
+                        <b>Rating:</b><input type="number" name="f_RatingPoint" id="txtRating" value="1" />
+                    </div>
+                    <button type="submit" class="btn btn-default pull-right">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

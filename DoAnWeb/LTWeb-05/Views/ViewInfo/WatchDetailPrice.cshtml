@@ -1,0 +1,78 @@
+﻿@using LTWeb_05.Models
+@model List<BidDetail>
+@{
+    ViewBag.Title = "WatchDetailPrice";
+}
+@if (ViewBag.ErrorMsg != null)
+{
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Warning!</strong> @ViewBag.ErrorMsg
+    </div>
+}
+else
+{
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row bg-title">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Manage User</h4>
+                </div>
+                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                        <li class="active">Basic Table</li>
+                    </ol>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /row -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="white-box">
+                        <h3 class="box-title">Basic Table</h3>
+                        <p class="text-muted">Add class <code>.table</code></p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>User ID</th>
+                                        <th>Product ID</th>
+                                        <th>Bid Price</th>
+                                        <th>Time Auction</th>
+                                        <th>Option</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var l in Model)
+                                    {
+                                        <tr>
+                                            <td>@l.f_ID</td>
+                                            <td>@l.ProID</td>
+                                            <td>@l.BidPrice</td>
+                                            <td>@DateTime.Parse(l.TimeAuction.ToString())</td>
+                                            <td>
+                                                <a href="@Url.Action("BanUser","ViewInfo", new {id = l.f_ID ,proid = l.ProID })" class="btn btn-danger" role="button">
+                                                    Ban User
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="@Url.Action("Comment","ViewInfo", new {id = l.f_ID ,proid = l.ProID })" class="btn btn-danger" role="button">
+                                                    Comment
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+}
+
+
+

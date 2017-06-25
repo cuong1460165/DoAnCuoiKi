@@ -1,0 +1,114 @@
+﻿@using LTWeb_05.Helpers
+@section css{
+    <link href="~/assets/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
+}
+@section js{
+    <script src="~/assets/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="~/Scripts/tinymce/tinymce.min.js"></script>
+    <script src="~/assets/js/bootstrap.file-input.js"></script>
+    <script>
+        $('.selectpicker').selectpicker();
+        $('input[type=file]').bootstrapFileInput();
+
+        tinymce.init({
+            selector: '#txtFullDes',
+            menubar: false,
+            toolbar1: "styleselect | bold italic | link image | alignleft aligncenter alignright | bullist numlist",
+            toolbar2: "fontselect | fontsizeselect | forecolor backcolor",
+            plugins: 'link image textcolor' ,
+            enconding : "xml",
+        });
+    </script>
+}
+<p>Add New Product</p>
+<form class="form-horizontal" method="post" action="" id="addProductForm" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="txtProName" class="col-sm-2 control-label">Product Name</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="txtProName" name="ProName" />
+        </div>
+        <label for="CatID" class="col-sm-2 control-label">Category</label>
+        <div class="col-sm-4">
+            <select class="form-control selectpicker" name="CatID">
+                @foreach (var c in ViewBag.Categories)
+                {
+                    <option value="@c.CatID">@c.CatName</option>
+                }
+            </select>
+        </div>
+    </div>
+    @*<div class="form-group">
+        <label for="StartPrice" class="col-sm-2 control-label"> TinyDes</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="txtTinyDes" name="TinyDes" />
+        </div>
+    </div>*@
+    <div class="form-group">
+        <label for="StepPrice" class="col-sm-2 control-label">Price</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="txtPrice" name="Price" />
+        </div>
+        <label for="EndPrice" class="col-sm-2 control-label">MaxPrice</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="txtMaxPrice" name="MaxPrice" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="IntervalTime" class="col-sm-2 control-label">Selling Time</label>
+        <div class="col-sm-4">
+            <input type="datetime-local" class="form-control" id="txtExpried" placeholder="day(s)" name="Expried" />
+        </div>
+        <label for="ExtendTime" class="col-sm-2 control-label">Extend Time</label>
+        <div class="col-sm-2">
+            <label>
+                <input type="radio" name="ExtendTime" value="true">
+                Yes
+            </label><br />
+            <label>
+                <input type="radio" name="ExtendTime" value="false">
+                No
+            </label><br />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Thirdimg" class="col-sm-2 control-label">Image 1</label>
+        <div class="col-sm-4">
+            <input type="file" id="fuMain" name="fuMain" />
+        </div>
+        <label for="Thirdimg" class="col-sm-2 control-label">Image 2</label>
+        <div class="col-sm-4">
+            <input type="file" id="fuThumbs1" name="fuThumbs1" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Thirdimg" class="col-sm-2 control-label">Image 3</label>
+        <div class="col-sm-4">
+            <input type="file" id="fuThumbs2" name="fuThumbs2" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="StartPrice" class="col-sm-2 control-label"> TinyDes</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="txtTinyDes" name="TinyDes" />
+        </div>
+        <label for="txtDes" class="col-sm-2 control-label">FullDes</label>
+        <div class="col-sm-10">
+            <textarea class="form-group" id="txtFullDes" name="FullDes"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10">
+            <input type="text" value="@CurrentContext.GetCurUser().f_ID" name="f_IDPost" hidden />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <button type="submit" class="btn btn-danger">
+                <i class="fa fa-check"></i>&nbsp;Save
+            </button>   
+            <a href="@Url.Action("Index","MProduct")" class="btn btn-success"
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;List of Products
+            </a>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,20 @@
+﻿@model LTWeb_05.Models.User
+@{
+    ViewBag.Title = "EditPermisson";
+}
+<form class="form-horizontal" method="post" action="@Url.Action("Accept", "Manage")">
+    <input type="hidden" name="id" value="@Model.f_ID" />
+    <div class="form-group">
+        <p>
+            You have sure to permission ???
+        <p>
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success">Accept</button>
+            <a href="@Url.Action("WaitingAccept","Manage")" class="btn btn-success" role="button">
+                Cancel
+            </a>
+        </div>
+    </div>
+</form>
+
+
